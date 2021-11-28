@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="style.css" rel="stylesheet">
+		<script src="script.js"></script>
+		<title>Hacker Escape Room</title>
+	</head>
+	<body>
+		<header>
+			<img alt="[Esc]" src="images/ESCLogo.png">
+			<h1>Hacker Escape Room</h1>
+		</header>
+		<nav>
+			<a href="#">Play online</a>
+			<a href="#">Play onsite</a>
+			<a href="#">The story</a>
+			<a href="#">Contact us</a>
+		</nav>
+		<main>
+			<section id="our-challenges">
+				<h2>Our challenges</h2>
+				<button class="primary on-dark large" id="show-filter-challenges">Filter challenges</button>
+			</section>
+			<form class="hidden" id="filter-challenges">
+				<header>
+					<a class="fas fa-times" id="hide-filter-challenges"></a>
+					<h3>Filter challenges</h3>
+				</header>
+				<section id="filter-by-type">
+					<h4>By type</h4>
+					<label>
+						<input checked name="types[]" type="checkbox" value="online">
+						Include online challenges
+					</label>
+					<label>
+						<input checked name="types[]" type="checkbox" value="onsite">
+						Include onsite challenges
+					</label>
+				</section>
+				<section id="filter-by-rating">
+					<h4>By rating</h4>
+					<span class="rating">
+						<span><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+						<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+						<input max="5.0" min="0.0" name="minimum" step="0.1" type="range" value="0.0">
+					</span>
+					to
+					<span class="rating">
+						<span><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+						<span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+						<input max="5.0" min="0.0" name="maximum" step="0.1" type="range" value="5.0">
+					</span>
+				</section>
+				<section id="filter-by-tags">
+					<h4>By tags</h4>
+				</section>
+				<footer>
+					<h4>Start typing to search for keyword</h4>
+					<input name="keywords" placeholder="Start typing to filter" type="search">
+				</footer>
+			</form>
+			<section id="challenges">
+				<h2 class="hidden">No matching challenges</h2>
+				<ul class="card-list"></ul>
+			</section>
+		</main>
+		<footer>
+			<section>
+				<h3>[Esc] Hacker Escape Rooms</h3>
+				<p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+			</section>
+			<section>
+				<h3>Site map</h3>
+				<a href="#">The Story</a>
+				<a href="#">Contact Us</a>
+				<a href="#">Legal</a>
+				<br>
+				<a href="#">Play online</a>
+				<a href="#">Play on-site</a>
+			</section>
+			<section>
+				<h3>Follow us on</h3>
+				<a href="#">Facebook</a>
+				<a href="#">Instagram</a>
+				<a href="#">Twitter</a>
+			</section>
+		</footer>
+	</body>
+</html>
